@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="1dp"
+    android:background="#FFF"
+    android:clickable="true"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txt_codigodb"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+             android:layout_marginTop="8dp"
+            android:hint="codigo"
+            />
+
+        <ImageView
+            android:id="@+id/imagendb"
+            android:layout_width="110dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ambiente_1"
+          />
+
+        <EditText
+            android:id="@+id/txt_capitulodb"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="capitulo"
+            android:layout_below="@+id/txt_codigodb"
+            />
+
+        <EditText
+            android:id="@+id/txt_deshabilitardb"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_alignParentRight="true"
+            android:hint="deshabilitado"
+            app:layout_constraintTop_toBottomOf="@+id/txt_urlpdfdb"
+            tools:layout_editor_absoluteX="251dp" />
+
+        <EditText
+            android:id="@+id/txt_urlpdfdb"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:hint="url pdf"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txt_deshabilitardb"
+           />
+
+
+        <EditText
+            android:id="@+id/txt_ssdpdfdb"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="ssd pdf"
+            android:layout_below="@+id/txt_urlpdfdb"
+           />
+
+        <EditText
+            android:id="@+id/txt_asiganturadb"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+
+            android:layout_marginStart="8dp"
+
+            android:layout_marginTop="8dp"
+            android:hint="asignatura"
+            android:layout_below="@id/txt_urlpdfdb"
+            android:layout_alignParentRight="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_capitulodb" /><![CDATA[
+
+
+        >
+
+    ]]>
+    </RelativeLayout>
+
+
+
+
+
+
+
+</android.support.v7.widget.CardView>
